@@ -8,27 +8,54 @@
             font-family: Arial, sans-serif;
             margin: 40px;
             background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             text-align: center;
         }
         a {
             text-decoration: none;
             color: black;
-            font-size: 24px;
-            margin: 10px;
+            font-size: 2em; /* Larger font size */
+            margin: 20px;
+            display: block;
+            width: 120px; /* Fixed width for consistency */
+            height: 120px; /* Fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid transparent; /* Stylish border */
+            border-radius: 10px; /* Rounded corners */
+            transition: all 0.3s ease;
         }
         a:hover {
             color: #007BFF;
+            border-color: #007BFF;
         }
         .icon {
             margin-right: 8px;
+            font-size: 1.5em; /* Larger icons */
+        }
+        @media (max-width: 600px) {
+            a {
+                font-size: 1.5em;
+                width: 100px;
+                height: 100px;
+            }
+            .icon {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Lafabrics</h1>
-    <p><a href="https://www.instagram.com/lafabrics.pk" target="_blank"><i class="fab fa-instagram icon"></i>Instagram</a></p>
-    <p><a href="https://www.facebook.com/lafabrics.pk" target="_blank"><i class="fab fa-facebook-f icon"></i>Facebook</a></p>
-    <p><a href="https://lafabrics.pk" target="_blank"><i class="fas fa-globe icon"></i>Website</a></p>
-    <p><a href="https://wa.me/+923214444996" target="_blank"><i class="fab fa-whatsapp icon"></i>WhatsApp</a></p>
+    <a href="https://www.instagram.com/lafabrics.pk" target="_blank"><i class="fab fa-instagram icon"></i>Instagram</a>
+    <a href="https://www.facebook.com/lafabrics.pk" target="_blank"><i class="fab fa-facebook-f icon"></i>Facebook</a>
+    <a href="https://lafabrics.pk" target="_blank"><i class="fas fa-globe icon"></i>Website</a>
+    <a href="https://wa.me/+923214444996" target="_blank"><i class="fab fa-whatsapp icon"></i>WhatsApp</a>
+    <a href="mailto:help@lafabrics.pk"><i class="fas fa-envelope icon"></i>Email</a>
 </body>
 </html>
