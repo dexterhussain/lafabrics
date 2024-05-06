@@ -6,28 +6,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
+            padding: 40px;
             background-color: #f4f4f4;
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates a responsive grid */
+            gap: 20px; /* Space between grid items */
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             text-align: center;
         }
         a {
             text-decoration: none;
             color: black;
-            font-size: 2em; /* Larger font size */
-            margin: 20px;
-            display: block;
-            width: 120px; /* Fixed width for consistency */
-            height: 120px; /* Fixed height */
             display: flex;
+            flex-direction: column; /* Aligns the icon and text vertically */
             align-items: center;
             justify-content: center;
-            border: 2px solid transparent; /* Stylish border */
-            border-radius: 10px; /* Rounded corners */
+            width: 100%; /* Takes full width of the grid column */
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 20px; /* Padding inside the links */
             transition: all 0.3s ease;
         }
         a:hover {
@@ -35,23 +35,17 @@
             border-color: #007BFF;
         }
         .icon {
-            margin-right: 8px;
-            font-size: 1.5em; /* Larger icons */
+            font-size: 3em; /* Larger icon size */
+            margin-bottom: 8px; /* Space between icon and text */
         }
-        @media (max-width: 600px) {
-            a {
-                font-size: 1.5em;
-                width: 100px;
-                height: 100px;
-            }
-            .icon {
-                font-size: 1em;
-            }
+        h1 {
+            grid-column: span 4; /* Header spans all columns */
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Lafabrics</h1>
+    <h1>Welcome to LA Fabrics</h1>
     <a href="https://www.instagram.com/lafabrics.pk" target="_blank"><i class="fab fa-instagram icon"></i>Instagram</a>
     <a href="https://www.facebook.com/lafabrics.pk" target="_blank"><i class="fab fa-facebook-f icon"></i>Facebook</a>
     <a href="https://lafabrics.pk" target="_blank"><i class="fas fa-globe icon"></i>Website</a>
